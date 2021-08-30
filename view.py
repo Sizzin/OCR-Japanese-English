@@ -34,7 +34,7 @@ class OCRWindow:
         self.style = ThemedStyle(self.window)
         self.ttkStyle = ttk.Style()
         self.ttkStyle.configure('TFrame', background=BG_COLOR)
-        self.window.tk.call('source', 'sun-valley.tcl') # https://github.com/rdbende/Sun-Valley-ttk-theme
+        self.window.tk.call('source', 'theme/sun-valley.tcl') # https://github.com/rdbende/Sun-Valley-ttk-theme
         self.window.tk.call('set_theme', 'dark')
 
         self.frame = ttk.Frame(self.window, style='TFrame')
